@@ -1,4 +1,4 @@
-                                                            📄 Form Project
+📄 Form Project
 A responsive and accessible form built using HTML, CSS, and JavaScript that collects user input, prevents page reload on submit, and clears the form after submission.
 
 live server:
