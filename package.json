@@ -1,0 +1,35 @@
+{
+  "name": "form-validation-project",
+  "version": "1.0.0",
+  "description": "A responsive and accessible form built with HTML, CSS, and JavaScript featuring real-time validation and modern UI design",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "deploy": "echo 'Deploy via GitHub Pages: Settings > Pages > Source: main branch'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mustafa-sarwari/Form.git"
+  },
+  "keywords": [
+    "form",
+    "validation",
+    "html5",
+    "css3",
+    "javascript",
+    "responsive",
+    "frontend",
+    "web-development",
+    "accessibility",
+    "form-validation",
+    "ui-ux"
+  ],
+  "author": "Mustafa Sarwari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mustafa-sarwari/Form/issues"
+  },
+  "homepage": "https://mustafa-sarwari.github.io/Form/",
+  "devDependencies": {},
+  "dependencies": {}
+}

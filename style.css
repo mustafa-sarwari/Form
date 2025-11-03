@@ -1,13 +1,21 @@
-body{
+/* ===================================
+   Global Styles & Reset
+   =================================== */
+
+body {
     font-family: "Baskervville", sans-serif;
     margin-top: 100px;
-    background-color:rgb(25, 39, 34);
+    background-color: rgb(25, 39, 34);
     background-image: linear-gradient(rgb(25, 39, 34), white);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
- form{
+/* ===================================
+   Form Container Styles
+   =================================== */
+
+form {
     display: block;
     margin: auto;
     background-color: #89a882;
@@ -17,26 +25,33 @@ body{
     width: 100%;
     box-sizing: border-box;
     overflow: hidden; 
-    box-shadow:  0px 0px 10px #89a882;
- }
+    box-shadow: 0px 0px 10px #89a882;
+}
 
- legend{
+/* Form header */
+legend {
     text-align: center;
     font-weight: bolder;
     font-size: 7vw;
     padding-top: 2vh;
-    
- }
-fieldset{
+}
+
+/* Remove default fieldset styling */
+fieldset {
     border: none;
     padding: 0px 20px 20px;
     margin: 0px;
 }
 
-input{
+/* ===================================
+   Input Field Styles
+   =================================== */
+
+input {
     color: #89a882;
 }
-.input{
+
+.input {
     width: 100%;
     height: 30px;
     margin: 4px;
@@ -44,51 +59,59 @@ input{
     border-radius: 8px;
     color: #89a882;
     font-weight: bold;
-    
 }
 
-.form{
+/* Form field wrapper */
+.form {
     margin: 10px;
 }
-.buttons{
+
+/* ===================================
+   Button Styles
+   =================================== */
+
+.buttons {
     display: flex;
     margin: 20px;
     justify-content: flex-start;
     width: 100%;
     height: 30px;
-    
     font-weight: bold;
 }
-button{
+
+button {
     padding: 0;
 }
-#button input{
+
+#button input {
     border: none;
 }
 
-.buttons .reset{
-    margin-left:10%
+.buttons .reset {
+    margin-left: 10%;
 }
+
 button,
-.buttons input{
+.buttons input {
     width: 80px;
     border-radius: 8px;
     border: inherit;
     color: #89a882;
     font-weight: bold;
     cursor: pointer;
-    
 }
+/* ===================================
+   Label & Textarea Styles
+   =================================== */
 
-
-label{
+label {
     font-weight: bolder;
     font-size: 25px;
     padding-top: 12px;
     width: 20%;
 }
 
-form textarea{
+form textarea {
     width: 90%;
     height: 200px;
     display: block;
@@ -99,29 +122,30 @@ form textarea{
     color: #89a882;
 }
 
-.form_text{
+.form_text {
     text-align: center;
 }
 
-.form_text label{
- font-weight: bolder
+.form_text label {
+    font-weight: bolder;
+}
+/* ===================================
+   Icon Styles (Font Awesome)
+   =================================== */
+
+.fa-solid {
+    padding: 5px;
+    width: 30px;
+    height: 17px;
+    text-align: center;
+    background-color: #89a882;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    margin-top: 5px;
+    color: #fff;
 }
 
-
-.fa-solid{
-padding: 5px;
-width: 30px;
-height: 17px;
-text-align: center;
-background-color: #89a882;
-border: 2px solid #fff;
-border-radius: 8px;
-margin-top: 5px;
-color: #fff;
-
-}
-
-.input_icons{
+.input_icons {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -129,58 +153,70 @@ color: #fff;
     color: #89a882;   
 }
 
-@media all and (min-width: 660px){
-    form{
-        width: 65%
+/* ===================================
+   Responsive Design - Media Queries
+   =================================== */
+
+/* Tablet (660px and above) */
+@media all and (min-width: 660px) {
+    form {
+        width: 65%;
     }
-    legend{
+    
+    legend {
         font-size: 4vw;
         margin-top: 20px;
     }
 
-    .form{
+    .form {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        gap:1rem;
+        gap: 1rem;
     }
 
-    .input_icons{
+    .input_icons {
         margin-top: 1rem;
     }
 }
 
-@media all and (min-width: 930px){
-    legend{
+/* Desktop (930px and above) */
+@media all and (min-width: 930px) {
+    legend {
         font-size: 3vw;
     }
 
-    fieldset{
+    fieldset {
         display: grid;
-        grid-template-columns:  1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-    .form{
+    
+    .form {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .form label{
+    
+    .form label {
         width: 100%;
         font-size: 1.5vw;
         margin-bottom: -30px;
     }
-    .form input{
+    
+    .form input {
         height: 90%;
-        width: 20vw
+        width: 20vw;
     }
-    .fa-solid{
+    
+    .fa-solid {
         height: inherit;
     }
 
     .form_text,
-    textarea{
+    textarea {
         display: flex;
         flex-direction: column;
     }
-    label{
+    
+    label {
         width: 100%;
     }
 }

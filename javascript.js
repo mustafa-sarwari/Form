@@ -1,22 +1,49 @@
-const btn = document.querySelector("form");
-const form = document.querySelectorAll("form input");
-btn.addEventListener("submit", (event) =>{
-    event.preventDefault()
-    const doc = [];
+/**
+ * Form Validation and Submission Handler
+ * Handles form submission, data collection, and field clearing
+ */
+
+// Select form element and all input fields
+const formElement = document.querySelector("form");
+const formInputs = document.querySelectorAll("form input");
+
+/**
+ * Handle form submission
+ * Prevents default form submission, collects data, logs to console, and clears fields
+ */
+formElement.addEventListener("submit", (event) => {
+    // Prevent default form submission behavior (page reload)
+    event.preventDefault();
     
-    form.forEach((elements) => {
-        doc.push(elements.value);
-    })
+    // Array to store collected form data
+    const formData = [];
+    
+    // Collect values from all input fields
+    formInputs.forEach((input) => {
+        formData.push(input.value);
+    });
 
-    form.forEach((elements)=>{
-        const type = elements.type.toLowerCase();
-        if(type === "text" || type === "password" || type === "email" || type === "number"){
-        elements.value ="";
-}})
+    // Clear all input fields after data collection
+    formInputs.forEach((input) => {
+        const inputType = input.type.toLowerCase();
+        
+        // Clear text-based input fields
+        if (inputType === "text" || 
+            inputType === "password" || 
+            inputType === "email" || 
+            inputType === "number") {
+            input.value = "";
+        }
+    });
 
-    let area = document.querySelector("form textarea");
-    doc.push(area.value);
-    area.value = ""
+    // Handle textarea separately
+    const textareaElement = document.querySelector("form textarea");
+    formData.push(textareaElement.value);
+    textareaElement.value = "";
 
-    console.log(doc)
-})
+    // Log collected data to console for debugging
+    console.log("Form Data Submitted:", formData);
+    
+    // Optional: Show success message to user
+    alert("Form submitted successfully! Check the console for details.");
+});
