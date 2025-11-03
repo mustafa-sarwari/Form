@@ -13,7 +13,7 @@ This project is a frontend-only application with no backend dependencies. The la
 If you discover a security vulnerability in this project, please report it by:
 
 1. **DO NOT** open a public issue
-2. Email the maintainer at: mustafa.sarwari@example.com
+2. Contact the maintainer via GitHub issues (mark as security issue) or email
 3. Include:
    - Description of the vulnerability
    - Steps to reproduce

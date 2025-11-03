@@ -185,7 +185,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 🌐 GitHub: [@mustafa-sarwari](https://github.com/mustafa-sarwari)
 - 💼 LinkedIn: [Mustafa Sarwari](https://www.linkedin.com/in/gm-sarwari/)
-- 📧 Email: mustafa.sarwari@example.com
+- 📧 Contact: Via GitHub or LinkedIn
 
 ---
 
